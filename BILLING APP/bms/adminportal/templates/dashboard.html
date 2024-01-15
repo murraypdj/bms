@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Add this line inside the <head> section of your HTML file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Management Utility</title>
+    <!-- Inline CSS for centering -->
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Billing Management Utility</h1>
+        
+        <div class="row mt-4">
+            <div class="col-md-4 offset-md-4">
+                <input type="text" class="form-control" id="customerIdInput" placeholder="Search by Customer ID">
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary" onclick="searchCustomer()">Search</button>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center" id="customerCards">
+            <!-- Customer cards will be dynamically added here -->
+        </div>
+    </div>
+
+    <footer class="text-center footer">
+        <p>Designed by Peter Murray 2024. See full portfolio at <a href="http://portfolio-pdjm.s3-website-ap-northeast-1.amazonaws.com/" target="_blank">portfolio</a>.</p>
+    </footer>
+
+    <script src="{% static 'dashboard.js' %}"></script>
+</body>
+</html>
