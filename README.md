@@ -10,8 +10,7 @@ Brief description of your project.
   - [Node API](#node-api)
   - [Django App](#django-app)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -49,10 +48,3 @@ Explain how to set up the project. Divide this section into subsections for each
 The serivce api generates random user usage & the django app calls the api, sorts and stores the data. It also does bill 
 calculation but that isn't currently displayed in the admin userportal.
 
-## Contributing
-
-Explain how others can contribute to your project if applicable.
-
-## License
-
-Specify the license under which your project is released.
